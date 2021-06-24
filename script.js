@@ -27,6 +27,7 @@ function draw() {
 }
 
 function imageLoaded() {
+  image(img, 0, 0, width, height);
   detector = ml5.objectDetector("cocossd", modelReady);
 }
 
